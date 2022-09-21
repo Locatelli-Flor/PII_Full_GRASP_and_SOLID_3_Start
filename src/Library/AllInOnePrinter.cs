@@ -3,29 +3,17 @@
 // Copyright (c) Programación II. Derechos reservados.
 // </copyright>
 //---------------------------------------------------------------------------------
-using System;
+/* using System;
 using System.IO;
 
 namespace Full_GRASP_And_SOLID.Library
 {
-    public enum Destination
-    {
-        Console,
-        File
-    }
-
     public class AllInOnePrinter
     {
-        public void PrintRecipe(Recipe recipe, Destination destination)
+        public void PrintRecipe(IPrinter receta)
         {
-            if (destination == Destination.Console)
-            {
-                Console.WriteLine(recipe.GetTextToPrint());
-            }
-            else
-            {
-                File.WriteAllText("Recipe.txt", recipe.GetTextToPrint());
-            }
+            receta.Imprimir
         }
     }
-}
+} */
+// Utilice el polimorfismo para imprimir las recetas independientemente del destino, a través del tipo IPrinter, que implementa el método Imprimir.
